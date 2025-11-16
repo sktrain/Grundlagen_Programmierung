@@ -22,8 +22,8 @@ for animal in animals:
 liste = []
 anzahl = int(input("Gewünschte Anzahl: "))
 for x in range(anzahl):
-    zahl = int(input("Zahl: "))
-    liste.append(zahl)
+    wort = input("Wort: ")
+    liste.append(wort)
 
 # jetzt Ausgabe
 print(liste)
@@ -55,7 +55,37 @@ print("Fakultät von", n, "ist:", result)
 
 anzahl = int(input("Anzahl: "))
 
-for i in range(0,anzahl+1):
+for i in range(1,anzahl+1):
     s ="*"*i
+    print(i, s)
+
+# Zusatz: Passe das Programm so an, dass es einen Weihnachtsbaum aus Sternchen zeichnet,
+# dessen Höhe vom Benutzer gewählt werden kann.
+
+anzahl = int(input("Anzahl: "))
+
+for i in range(1,anzahl+1):
+    s =" "*(anzahl -i ) + "*"*i + "*"*(i-1)
     print(s)
 
+
+###############################################################################################
+
+# Passe das in einer früheren Aufgabe erweiterte Notenprogramm so an,dass der Benutzer wählen kann,
+# wie viele Noten er eingeben möchte.
+
+summeBisher = 0.0
+
+anzahl = int(input("Anzahl Noten: "))
+
+for i in range(anzahl):
+    note = float(input("nächste Note: "))
+    summeBisher = summeBisher + note
+
+durchschnitt = float(input("gewünschter Durchschnitt: "))
+
+print(summeBisher, durchschnitt)
+# Formel (summeBisher + x ) / (anzahl+1) = durchschnitt
+x = durchschnitt * (anzahl+1) - summeBisher
+
+print("notwendige letzte Note:", x)
