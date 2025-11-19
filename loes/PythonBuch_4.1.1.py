@@ -26,7 +26,7 @@ print("notwendige 4.Note:", x)
 std = 10
 min = 30
 sek = 30
-print("Zeit in Sekunden:", 30 + 30 * 60 + 10 + 60 + 60)
+print("Zeit in Sekunden:", 30 + 30 * 60 + 10 * 60 * 60)
 
 
 #Eine Werkstatt verlangt für die Benützung einer Maschine eine Grundgebühr
@@ -57,5 +57,6 @@ print("Preis:", result, "Franken")
 
 result = 12*18 + 6*13 + 24*12
 print("Preis:", result, "Franken")
+
 
 
